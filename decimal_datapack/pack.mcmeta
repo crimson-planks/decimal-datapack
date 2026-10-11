@@ -1,0 +1,9 @@
+{
+    "pack": {    
+        "description": "A datapack for storing big numbers from -9.99999999e2147483647 to 9.99999999e2147483647",
+        "pack_format": 71,
+        "supported_formats": [71, 81],
+        "min_format": 71,
+        "max_format": 107
+    }
+}

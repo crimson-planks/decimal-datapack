@@ -1,0 +1,28 @@
+{
+    "type": "confirmation",
+    "title": "divpow10",
+    "inputs": [
+        {
+            "key": "n",
+            "type": "text",
+            "label": "n",
+            "max_length": 11
+        },
+        {
+            "key": "divval",
+            "type": "text",
+            "label": "divval (should be a power of 10)",
+            "max_length": 11
+        }
+    ],
+    "yes": {
+        "label": "Run!",
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "function decimal:dialog/divpow10 {n:$(n),divval:$(divval)}"
+        }
+    },
+    "no": {
+        "label": "No"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "confirmation",
+    "title": "Normalize Decimal",
+    "inputs": [
+        {
+            "key": "m",
+            "type": "text",
+            "label": "m(magnitude)",
+            "max_length": 11
+        },
+        {
+            "key": "e",
+            "type": "text",
+            "label": "e(exponent)",
+            "max_length": 11
+        }
+    ],
+    "yes": {
+        "label": "Normalize!",
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "function decimal:dialog/normalize {m:$(m),e:$(e)}"
+        }
+    },
+    "no": {
+        "label": "No"
+    }
+}
